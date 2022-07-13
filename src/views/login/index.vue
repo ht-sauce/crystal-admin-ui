@@ -171,8 +171,7 @@ export default {
     }
   }
   .input-icon {
-    height: 39px;
-    width: 14px;
+    font-size: 14px;
     margin-left: 2px;
   }
 }
