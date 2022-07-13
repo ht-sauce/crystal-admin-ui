@@ -1,5 +1,8 @@
 <template>
   <div class="login">
+    <!--    解决字体图标没有加载的问题-->
+    <i class="el-icon-star-on load-icon"></i>
+
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
       <h3 class="title">聚惠星管理系统</h3>
       <el-form-item prop="username">
@@ -145,6 +148,10 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss">
+.load-icon {
+  position: fixed;
+  left: -10000px;
+}
 .login {
   display: flex;
   justify-content: center;
